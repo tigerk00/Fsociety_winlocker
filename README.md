@@ -1,2 +1,2 @@
 "# Fsociety_winlocker" 
-Винлокер , написанный на ЯП Python .
+Simple win-locker written on python3 using tkinter and pyautogui libs. NOT FOR BAD!!!
